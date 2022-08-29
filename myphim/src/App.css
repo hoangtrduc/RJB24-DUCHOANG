@@ -1,27 +1,6 @@
-* {
-  margin: 0 auto;
+.card {
+    margin: 20px 0;
 }
-.app__img {
-  display: flex;
-  justify-items: center;
-  margin-top: 80px;
-  background-image: url(./component/img/main-3.jpg);
-  width: 200px;
-  height: 200px;
-}
-.appname {
-  margin-top: 15px;
-  text-align: center;
-}
-
-.name {
-  text-align: center;
-  color: #000;
-  font-size: 20px;
-}
-
-.date {
-  text-align: center;
-  color: #000;
-  font-size: 20px;
+.row {
+    list-style-type: none;
 }
