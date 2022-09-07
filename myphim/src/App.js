@@ -29,7 +29,7 @@ const Chart = [
   {
     text: "VISITORS",
     color1: "yellow",
-    colors: "golden",
+    colors: "#ff0ff0",
     percentage: "30"
   },
   {
@@ -41,13 +41,13 @@ const Chart = [
   {
     text: "BASIC",
     color1: "pink",
-    colors: "hot pink",
+    colors: "#ff0000",
     percentage: "80"
   },
   {
     text: "OTHERS",
-    color1: "royal blue",
-    colors: "navy blue",
+    color1: "#ffd444",
+    colors: "#acddda",
     percentage: "37"
   },
 ]
