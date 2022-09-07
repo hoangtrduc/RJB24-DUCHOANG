@@ -1,0 +1,19 @@
+.chart {
+  margin: 10px;
+  width: 80%;
+  display: flex;
+}
+.title {
+  width: 20%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.module {
+  padding-left: 50px;
+  height: 50px;
+}
+.text {
+  line-height: 50px;
+}
