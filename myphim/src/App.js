@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import ColorXam from './Component/ColorXam';
 // import ClassCompo from './Component/ClassComponent/ClassCompo';
 // import Bt01 from './Homework/Sesstion01/Bai01/Bt01';
@@ -15,20 +15,24 @@ import React from 'react';
 // import Like from './Homework/Sesstion03/Bai01/Like';
 // import Star from './Homework/Sesstion03/Bai02/Star';
 
-// Session06
+// // Session06
 // import Form02 from './Homework/Sesstion06/Bai02/Form02';
-import Form03 from './Homework/Sesstion06/form03/Form03';
+// import Form03 from './Homework/Sesstion06/form03/Form03';
 
-import LikeButton from './Homework/Sesstion03/Bai01/LikeButton';
-import Home from './Component/Home';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-} from "react-router-dom";
+// import LikeButton from './Homework/Sesstion03/Bai01/LikeButton';
 
-import Login from './Component/Login/Login';
+// import Home from './Component/Home';
+// import Login from './Component/Login/Login';
+// import {
+//   BrowserRouter,
+//   Routes,
+//   Route,
+//   Link,
+// } from "react-router-dom";
+
+import Form07 from './Homework/Sesstion07/Form07';
+
+
 
 import './App.css';
 
@@ -80,6 +84,10 @@ import './App.css';
 
 
 function App() {
+  const [login, setLogin] = useState({
+    email: undefined,
+    password: undefined,
+  });
   return (
     <>
       {/* <ColorXam/> */}
@@ -116,24 +124,31 @@ function App() {
 
 
       {/* <Form02 /> */}
-      <Form03 />
+      {/* <Form03 /> */}
 
 
 
       {/* <Login /> */}
       {/* <BrowserRouter>
         <Link to="/">HOME</Link>
-        <Link to="/form">LinkButtom</Link>
-        <Link to="/Login">Login</Link>
-        <Routes>
+        {/* <Link to="/form03">Form3</Link>
+        <Link to="/form02">Form 2</Link>
+        <Link to="/like">LikeButton</Link>
+        <Link to="/star">StarButton</Link> */}
+      {/* {login?.email ? <Link to="/Login">Log out</Link> : <Link to="/Login">Login</Link>} */}
+
+      {/* <Routes>
           <Route path="/" element={<Home />} />
-          <Route index path="/form" element={<LikeButton />} />
-          <Route path="/Login" element={<Login />} />
-        </Routes>
-      </BrowserRouter> */}
+          {/* <Route index path="/form03" element={<Form03 />} />
+          <Route path="/form02" element={<Form02 />} />
+          <Route path="/like" element={<LikeButton />} />
+          <Route path="/star" element={<Star />} /> */}
+      {/* <Route path="/Login" element={<Login setLogin={setLogin} />} /> */}
+      {/* </Routes> */}
+      {/* </BrowserRouter> */}
 
 
-
+      <Form07 />
     </>
   );
 }
