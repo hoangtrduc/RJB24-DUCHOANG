@@ -132,23 +132,7 @@ function App() {
 
 
       {/* <Login /> */}
-      {/* <BrowserRouter>
-        <Link to="/">HOME</Link>
-        {/* <Link to="/form03">Form3</Link>
-        <Link to="/form02">Form 2</Link>
-        <Link to="/like">LikeButton</Link>
-        <Link to="/star">StarButton</Link> */}
-      {/* {login?.email ? <Link to="/Login">Log out</Link> : <Link to="/Login">Login</Link>} */}
 
-      {/* <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route index path="/form03" element={<Form03 />} />
-          <Route path="/form02" element={<Form02 />} />
-          <Route path="/like" element={<LikeButton />} />
-          <Route path="/star" element={<Star />} /> */}
-      {/* <Route path="/Login" element={<Login setLogin={setLogin} />} /> */}
-      {/* </Routes> */}
-      {/* </BrowserRouter> */}
 
       {/* <Home /> */}
 
