@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-// import ColorXam from './Component/ColorXam';
-// import ClassCompo from './Component/ClassComponent/ClassCompo';
-// import Bt01 from './Homework/Sesstion01/Bai01/Bt01';
-// import Bai02 from './Homework/Sesstion01/Bai02/Bai02';
-// import Bai03 from './Homework/Sesstion01/Bai03/Bai03';
+
 // import ChartBar from './Homework/Sesstion01/ChartBar1/ChartBar';
 // import Header from './Component/ClassComponent/Header';
 // import Even from './Component/ClassComponent/Even';
@@ -12,12 +8,21 @@ import React, { useState } from 'react';
 // import Button from './Component/LikeButton/Button';
 // import B01like from './Component/LikeButton/B01like';
 
-// import Like from './Homework/Sesstion03/Bai01/Like';
-// import Star from './Homework/Sesstion03/Bai02/Star';
+//Sesstion02
+// import Bt01 from './Homework/Sesstion02/Bai01/Bt01';
+// import Bai02 from './Homework/Sesstion02/Bai02/Bai02';
+// import Bai03 from './Homework/Sesstion02/Bai03/Bai03';
+
+// Session 05
+// import Like from './Homework/Sesstion05/Bai01/Like';
+// import Star from './Homework/Sesstion05/Bai02/Star';
 
 // // Session06
 // import Form02 from './Homework/Sesstion06/Bai02/Form02';
 // import Form03 from './Homework/Sesstion06/form03/Form03';
+
+// Session 07
+// import Form07 from './Homework/Sesstion07/Form07';
 
 // import LikeButton from './Homework/Sesstion03/Bai01/LikeButton';
 
@@ -30,9 +35,7 @@ import React, { useState } from 'react';
 //   Link,
 // } from "react-router-dom";
 
-import Form07 from './Homework/Sesstion07/Form07';
-
-
+// import Home from './Component/MocApi/Home';
 
 import './App.css';
 
@@ -90,12 +93,13 @@ function App() {
   });
   return (
     <>
-      {/* <ColorXam/> */}
-      {/* <ClassCompo /> */}
+
+
 
       {/* <Bt01 /> */}
       {/* <Bai02 /> */}
       {/* <Bai03 /> */}
+
 
       {/* {Chart.map((item, index) => (
         <ChartBar
@@ -107,9 +111,8 @@ function App() {
         />
       ))} */}
 
-      {/* <Header /> */}
 
-      {/* <Even /> */}
+
 
       {/* <LikeButton /> */}
       {/* <Like /> */}
@@ -147,8 +150,9 @@ function App() {
       {/* </Routes> */}
       {/* </BrowserRouter> */}
 
+      {/* <Home /> */}
 
-      <Form07 />
+      {/* <Form07 /> */}
     </>
   );
 }

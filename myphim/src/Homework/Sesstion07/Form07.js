@@ -1,11 +1,14 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 export default function Form07() {
 
     const [address, setAddress] = useState([]);
     const [disTrict, setDisTrict] = useState([]);
     const [commune, setCommune] = useState([]);
+    const { register, handleSubmit } = useForm();
+    const onSubmit = data => console.log(data);
 
     useEffect(() => {
         async function fetchData() {
@@ -29,7 +32,7 @@ export default function Form07() {
         <div>
             <div className="relative flex flex-col justify-center min-h-screen overflow-hidden ">
                 <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-rose-600/40 ring-2 ring-indigo-600 lg:max-w-4xl">
-                    <form className="mt-6">
+                    <form className="mt-6" onSubmit={handleSubmit(onSubmit)}>
                         <div className="flex">
                             <div className="mb-2 w-2/4 pr-2">
                                 <label className="text-gray-700">Email</label>
@@ -48,6 +51,7 @@ export default function Form07() {
                                         focus:ring-opacity-50
                                     "
                                     placeholder="Abc@gmail.com"
+                                    {...register("Email")}
                                 />
                             </div>
                             <div className="mb-2 w-2/4">
@@ -68,7 +72,8 @@ export default function Form07() {
                                         focus:ring-opacity-50
                                     "
                                     placeholder="Password"
-                                    required
+                                    {...register("password")}
+
                                 />
                             </div>
                         </div>
@@ -90,7 +95,8 @@ export default function Form07() {
                                         focus:ring-opacity-50
                                     "
                                 placeholder="Address"
-                                required
+                                {...register("address")}
+
                             />
                         </div>
                         <div className="mb-2 text-center">
@@ -111,7 +117,7 @@ export default function Form07() {
                                         focus:ring-opacity-50
                                     "
                                 placeholder="Address2"
-                                required
+                                {...register("address2")}
                             />
                         </div>
                         <div className="flex justify-between mb-5">
@@ -128,6 +134,7 @@ export default function Form07() {
                                         focus:ring
                                         focus:ring-indigo-200
                                         focus:ring-opacity-50"
+                                    {...register("City")}
                                     onChange={e => changeCity(e.target.value)}
                                 >
                                     {address.length > 0 && address.map((item, index) => (
@@ -147,7 +154,9 @@ export default function Form07() {
                                         focus:border-indigo-300
                                         focus:ring
                                         focus:ring-indigo-200
-                                        focus:ring-opacity-50" onChange={e => changeCom(e.target.value)}>
+                                        focus:ring-opacity-50"
+                                    {...register("District")}
+                                    onChange={e => changeCom(e.target.value)}>
                                     {
                                         disTrict.map(dis => <option key={dis.code} value={dis.code} >{dis.name}</option>)
                                     }
@@ -165,7 +174,9 @@ export default function Form07() {
                                         focus:border-indigo-300
                                         focus:ring
                                         focus:ring-indigo-200
-                                        focus:ring-opacity-50">
+                                        focus:ring-opacity-50"
+                                    {...register("commune")}
+                                >
                                     {
                                         commune.map(wds => <option key={wds.code} value={wds.code}>{wds.name}</option>)
                                     }
